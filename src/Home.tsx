@@ -248,7 +248,7 @@ function Home() {
         <div className="flex overflow-hidden flex-col md:flex-row items-center w-full">
           {/* Sidebar or Fixed Navbar */}
           <div className="w-full h-[150px] md:w-[450px] bg-[#501957] text-white flex flex-col md:flex-col z-10 md:z-1 fixed top-0 md:top-1/2 md:left-0 transform md:-translate-y-1/2 md:h-[550px] justify-center items-center px-4">
-            {/* Left button (Previous) */}
+            {/* Left button */}
             <div className="flex flex-row justify-center items-center md:flex-col">
               <div className="order-1 md:order-1 border-[rgba(159,33,153,0.6)] hover:border-[#da46ff] m-2 hover:animate-scale-up pt-1 mb-2 border-4 inline-block rounded-full">
                 <button onClick={subtractProgress}>
@@ -260,7 +260,7 @@ function Home() {
                 </button>
               </div>
 
-              {/* Right button (Next) */}
+              {/* Right button */}
               <div className="order-3 md:order-2  border-[rgba(159,33,153,0.6)] m-2 hover:border-[#da46ff] hover:animate-scale-up pt-1 mb-2 border-4 inline-block rounded-full">
                 <button onClick={addProgress}>
                   <img
@@ -297,12 +297,10 @@ function Home() {
                 }`}
               >
                 <div className="text-[#E5E5E5] rounded-t-xl bg-[#7A1775] p-5">
-                  {/* Card Title */}
                   <div className="mb-5">
                     <p className="text-xl lg:text-lg h-[50px]">{card.title}</p>
                   </div>
 
-                  {/* Card Location */}
                   <div className="flex my-2">
                     <img
                       src={location}
@@ -312,12 +310,10 @@ function Home() {
                     <p className="text-md">{card.location}</p>
                   </div>
 
-                  {/* Divider */}
                   <div className="mx-1 my-3">
                     <hr className="border-[#b1abab]" />
                   </div>
 
-                  {/* Card Amount */}
                   <div className="flex items-center mt-4 md:mt-7">
                     <img
                       src={moneyBag}
@@ -328,7 +324,6 @@ function Home() {
                   </div>
                 </div>
 
-                {/* Load More Button */}
                 <div className="flex h-[50px] justify-center items-center bg-[#9d1196] text-[#E5E5E5] rounded-b-xl hover:bg-[#ce1fc5] transition-colors duration-300 ease-in-out">
                   <button
                     className="text-center text-lg md:text-2xl w-full"
